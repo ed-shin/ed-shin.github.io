@@ -938,8 +938,8 @@ table tfoot td {
 .about img {
   width: 100%;
   height: 100%;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  /* -webkit-border-radius: 50%;
+          border-radius: 50%; */
   -webkit-transition: -webkit-transform 0.35s;
   transition: -webkit-transform 0.35s;
   -o-transition: transform 0.35s;
@@ -954,7 +954,7 @@ table tfoot td {
 
 .about .author-name {
   font-family: 'PT Serif', serif;
-  margin: 0 0 10px;
+  margin: 20px 0 20px 0;
   position: relative;
   padding-bottom: 15px;
   font-size: 16px;
@@ -982,6 +982,17 @@ table tfoot td {
 .about p {
   font-size: 16px;
   margin: 0 0 10px;
+}
+
+.sidebar-nav {
+  padding: 50px 0 50px 0;
+}
+
+.sidebar-nav a {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.7;
+  display: block;
 }
 
 .content-box {
@@ -1388,10 +1399,11 @@ a.newer-posts:hover {
     margin: 10px auto auto;
   }
   .about img {
-    width: 100px;
-    height: 100px;
-    -webkit-border-radius: 100%;
-            border-radius: 100%;
+    width: 50%;
+    /* width: 100px; */
+    /* height: 100px; */
+    /* -webkit-border-radius: 100%; */
+            /* border-radius: 100%; */
     margin-bottom: 10px;
   }
   .content-box {
