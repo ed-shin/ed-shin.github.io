@@ -11,7 +11,8 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Ed Shin # add your name
 author-img: jp-shin.jpg # add your photo
-about-author: Shin's 개발 일기 # add description
+about-author: # add description
+about-blog: Shin's 개발 블로그
 social-facebook: jp.shin.kor
 social-github: ed-shin # add your Github handle
 social-email: jp.shin.kor@gmail.com # add your Email address
