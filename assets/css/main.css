@@ -1384,6 +1384,7 @@ a.newer-posts:hover {
 @media only screen and (max-width: 768px) {
   .sidebar {
     left: -240px;
+    z-index: 10;
     /* position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1403,17 +1404,34 @@ a.newer-posts:hover {
     margin: 0;
     background-color: #ffffff;
     -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
-            box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15); */
+            box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);*/
+    transition: All 0.4s ease;
+    -webkit-transition: All 0.4s ease;
   }
   /* .sidebar footer {
-    margin-bottom: 10px; */
-  }
+    margin-bottom: 10px;
+  }*/
   /* .about {
     text-align: center;
     text-align: right;
     max-width: 480px;
     margin: 10px;
   }  */
+  .sidebar.open {
+    left: 0px;
+    /* border-right: 1px solid rgba(31, 35, 46, 0.15); */
+    box-shadow: -60px 0px 100px -90px #000000, 60px 0px 300px -90px #000000;
+    -webkit-box-shadow: -60px 0px 100px -90px #000000, 60px 0px 300px -90px #000000;
+  }
+  #mask {
+    position:absolute;
+    z-index:9;
+    /* background:linear-gradient(90deg,black,white); */
+    background-color:#333;
+    display:none;
+    left:0;
+    top:0;
+  }
   .header-nav {
     position: relative;
     display: -webkit-box;
@@ -1442,6 +1460,7 @@ a.newer-posts:hover {
     position: absolute;
     left: 30px;
     top: 21px;
+    cursor: pointer;
   }
   .header-nav #sidebar-toggle::before {
     font: normal normal normal 23px/1 FontAwesome;
