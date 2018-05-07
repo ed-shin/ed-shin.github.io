@@ -84,7 +84,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  /* font-family: monospace, monospace; */
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -140,7 +140,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  /* font-family: monospace, monospace; */
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -1014,10 +1014,11 @@ table tfoot td {
 .content-box {
   padding: 20px;
   padding-left: 260px;
-  display: -webkit-box;
+  display: block;
+  /* display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -1229,12 +1230,17 @@ a.newer-posts:hover {
 }
 
 .page-cover-image {
+  display: none;
   position: relative;
   padding: 0;
   margin: 0;
-  max-height: 500px;
+  max-height: 150px;
   background-color: #fafafa;
   overflow: hidden;
+}
+
+.page-image {
+  margin-top: -75px;
 }
 
 .page-cover-image .page-image {
@@ -1366,12 +1372,12 @@ a.newer-posts:hover {
     margin: 0 0.9% 1.5%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
+    /* -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column;
+            flex-direction: column; */
   }
   .post .post-thumbnail {
-    width: 100%;
+    /* width: 100%; */
   }
   .post .post-content {
     width: 100%;
@@ -1492,11 +1498,11 @@ a.newer-posts:hover {
             /* border-radius: 100%; */
   }
   .content-box {
-    padding: 20px 10px;
-    display: -webkit-box;
+    padding: 10px 10px;
+    /* display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    display: flex; */
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -1532,6 +1538,7 @@ a.newer-posts:hover {
   }
   .post .post-thumbnail {
     width: 100%;
+    min-height: 5rem;
   }
   .post .post-content {
     width: 100%;
