@@ -444,12 +444,12 @@ template {
 }
 
 .highlighter-rouge {
-  color: #ce887b;
+  color: #6f605c;
   font-weight: 400;
   border: 1px solid #607D8B;
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  padding: 0.1rem 0.5rem;
+  /* padding: 0.1rem 0.5rem; */
 }
 
 .highlight .hll {
@@ -468,7 +468,7 @@ template {
 
 /* Error */
 .highlight .k {
-  color: #069;
+  color: #2397d1;
 }
 
 /* Keyword */
@@ -572,7 +572,7 @@ template {
 
 /* Keyword.Reserved */
 .highlight .kt {
-  color: #078;
+  color: #1624da;
 }
 
 /* Keyword.Type */
@@ -622,7 +622,7 @@ template {
 
 /* Name.Exception */
 .highlight .nf {
-  color: #c0f;
+  color: #aa62a2;
 }
 
 /* Name.Function */
@@ -632,7 +632,7 @@ template {
 
 /* Name.Label */
 .highlight .nn {
-  color: #0cf;
+  color: #8b62ff;
 }
 
 /* Name.Namespace */

@@ -31,53 +31,53 @@ ___
 
 #### - 인터페이스 매핑
 C++
-{% highlight ruby %}
+```csharp
 typedef void(*Callback)(ObjContainer* obj);
-{% endhighlight %}
+```
 
 C#
-{% highlight ruby %}
+```csharp
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 private delegate void Callback(IntPtr objects);
 
 [DllImport("native.dll", CallingConvention = CallingConvention.Cdecl)]
 [return: MarshalAs(UnmanagedType.I1)]
 private static extern bool SetCallback(IntPtr entry, Callback callback);
-{% endhighlight %}
+```
 
 <br>
 
 #### - 객체 전달받기
 C++
-{% highlight ruby %}
+```csharp
 void GetObject(NativeLib* instance, ObjContainer* obj)
-{% endhighlight %}
+```
 
 C#
-{% highlight ruby %}
+```csharp
 [DllImport("native.dll", CallingConvention = CallingConvention.Cdecl)]
 private static extern void GetObject(IntPtr entry, ref ObjContainer obj);
-{% endhighlight %}
+```
 
 <br>
 
 #### - 배열 객체 전달받기
 C++
-{% highlight ruby %}
+```csharp
 void GetArray(NativeLib* instance, ObjContainer** objs, int* length){
   int size = 10;
   *objs = new ObjContainer[size];
   *length = size;
 }
-{% endhighlight %}
+```
 
 C#
-{% highlight ruby %}
+```csharp
 [DllImport("native.dll", CallingConvention = CallingConvention.Cdecl)]
 private static extern void GetArray(IntPtr entry, out IntPtr objs, out int length);
-{% endhighlight %}
+```
 
-{% highlight ruby %}
+```csharp
 // 배열의 길이
 int length;
 // 배열 포인터
@@ -95,7 +95,7 @@ for (int i = 0; i < length; i++)
     // 데이터 타입 크기만큼 배열 위치를 변경한다.
     pArr = new IntPtr(pArr.ToInt32() + entrySize);
 }
-{% endhighlight %}
+```
 
 <br>
 
@@ -103,7 +103,7 @@ ___
 
 ### 3. 데이터 맵핑
 C++
-{% highlight ruby %}
+```csharp
 #pragma pack(1)
 struct ObjContainer
 {
@@ -116,10 +116,10 @@ public:
   double d;
   char charArr[10];
 };
-{% endhighlight %}
+```
 
 C#
-{% highlight ruby %}
+```csharp
 [StructLayout(LayoutKind.Sequential, Pack = 1)]
 public struct ObjContainer
 {
@@ -138,7 +138,7 @@ public struct ObjContainer
   [MarshalAs(UnmanagedType.ByValArray, SizeConst = 10)]
   public char[] charArr;
 }
-{% endhighlight %}
+```
 
 <br>
 

@@ -35,12 +35,12 @@ img: js.jpg
 
 그리고 아래처럼 햄버거 버튼용 div를 하나 추가하고 css를 적용하였다. (_아래 마법같은 css는 여러 사이트의 햄버거 버튼을 참조하였다. 놀라울 정도로 간단한 내용이라서 이 글을 적는 지금은 이해를 하지 못하고 일단 사용 중이다._)
 
-{% highlight ruby %}
+```css
 .header-nav #sidebar-toggle::before {
     font: normal normal normal 23px/1 FontAwesome;
     content: "\f0c9";
-  }
-{% endhighlight %}
+}
+```
 
 그리고 지금과 같은 헤더로 바뀌었다.
 
@@ -49,13 +49,13 @@ img: js.jpg
 ---  
 <br>
 
-햄버거 버튼을 만들었으니 버튼 기능을 추가해야하는데.. 이번엔 자바 스크립트.. 마침 자바 스크립트를 책으로 공부 중인 사람에게 적당한 시련이었다.
+햄버거 버튼을 만들었으니 버튼 기능을 추가해야하는데.. 이번엔 자바 스크립트.. 마침 타이밍 좋게 자바 스크립트를 공부 중이었다.
 
 ![clicked-hamberger](/assets/img/post-src/clicked-hamberger.png)
 
 위와 같이 버튼을 클릭했을 때 jqeury로 'open' 클래스를 추가해주고 바탕에 마스크 div를 씌워서 마스크를 클릭하는 경우 추가한 'open' 클래스를 제거해준다. 'open' 클래스가 추가된 경우 css에 sidebar의 left를 0px로 바꾸고 transition 처리를 해서ß 애니메이션처럼 적용하였다. (_mask div는 검색하니 많이 나온다_)
 
-```
+```javascript
 $(document).ready(function() {
   $("#sidebar-toggle").click(function(){
     $('.sidebar').addClass('open');

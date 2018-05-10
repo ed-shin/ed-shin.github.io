@@ -57,12 +57,12 @@ img: java.jpg
 Java OpenCV를 프로젝트에서 사용하는 포스팅은 다른 많은 곳에서 다루고 있기 때문에 이곳에서 기록하진 않는다.
 
 먼저, OpenCV를 사용할때 가장 우선적으로 호출해야 하는 함수가 있다.
-```
+```java
 System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 ```
 해당 구문을 분석해보면 Core.NATIVE_LIBRARY_NAME을 따라가면 아래와 같이 확인할 수 있다.
 
-```
+```java
 public static final String NATIVE_LIBRARY_NAME = getNativeLibraryName();
 private static String getNativeLibraryName() { return "opencv_java341"; }
 ```
