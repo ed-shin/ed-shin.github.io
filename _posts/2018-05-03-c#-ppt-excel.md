@@ -332,3 +332,8 @@ public void SetHyperLinkOnTable(int slideIdx, int tableShapeIdx, int row, int co
     shape.Table.Cell(row, col).Shape.TextFrame.TextRange.ActionSettings[Ppt.PpMouseActivation.ppMouseClick].Hyperlink.Address = address;
 }        
 ```
+
+___
+
+github:
+[https://github.com/ed-shin/Simple-Utilities/tree/master/CSharp/Utility/Window](https://github.com/ed-shin/Simple-Utilities/tree/master/CSharp/Utility/Window)
