@@ -77,6 +77,8 @@ hr {
   /* 1 */
   overflow: visible;
   /* 2 */
+  -webkit-margin-after: 2em;
+  -webkit-margin-before: 2em;
 }
 
 /**
@@ -1533,7 +1535,7 @@ a.newer-posts:hover {
   .post {
     width: 98%;
     max-width: 100%;
-    margin: 2%;
+    /* margin: 2%; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
