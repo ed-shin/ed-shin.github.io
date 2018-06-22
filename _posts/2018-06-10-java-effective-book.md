@@ -56,7 +56,7 @@ public enum Operation {
     }
 }
 
-public void example(){
+public void example(double x, double y){
     for(Operation op : Operation.values()){
         System.out.print("%f %s %f = %f%n", x, op, y, op.apply(x, y));
     }
