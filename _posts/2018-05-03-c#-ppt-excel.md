@@ -3,7 +3,7 @@ layout: post
 title: "C#으로 Excel 정보 PPT로 만들기"
 date: 2018-04-27 19:30:00 +0000
 description: C#을 사용해서 엑셀에 있는 정보들을 파워포인트 서식에 맞춰 데이터를 넣는 프로그램
-categories: [C#, project]
+categories: devlog
 tags: [C#, project]
 img: dotnet.jpg
 ---

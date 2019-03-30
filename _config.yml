@@ -1,15 +1,15 @@
-title: Funny Programming!
+title: Eden's Dev Blog
 description: > # this means to ignore newlines until "baseurl:"
-  ED Shin's 삽질을 기록하는 블로그 (About Programming)
-permalink: ':title/'
+  개발 기록 블로그
+permalink: ':categories/:title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author Settings
-author: Ed Shin # add your name
+author: eden # add your name
 author-img: jp-shin.jpg # add your photo
 about-author: # add description
-about-blog: Shin's 개발 블로그
+about-blog: 이든's 개발 블로그
 social-facebook: jp.shin.kor
 social-github: ed-shin # add your Github handle
 social-email: jp.shin.kor@gmail.com # add your Email address

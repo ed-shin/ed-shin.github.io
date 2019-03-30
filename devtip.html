@@ -1,0 +1,14 @@
+---
+layout: main
+---
+{% for post in site.posts %}
+
+  {% if post.categories contains 'devtip' %}
+    <article class="post">
+      {% include post-item.html %}
+    </article>
+  {% endif %}
+
+{% endfor %}
+
+<!-- {% include pagination.html %} -->

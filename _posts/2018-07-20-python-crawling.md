@@ -3,7 +3,7 @@ layout: post
 title: "파이썬으로 크롤링하기"
 date: 2018-06-20 19:30:00 +0000
 description: Python을 사용한 Crawling 방법
-categories: Python
+categories: devlog
 tags: Python
 img: python.jpg
 ---

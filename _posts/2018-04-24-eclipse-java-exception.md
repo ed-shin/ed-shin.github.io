@@ -3,7 +3,7 @@ layout: post
 title: "Java OpenCV를 Eclipse에서 사용하기(Window)"
 date: 2018-04-24 18:32:20 +0300
 description: 이클립스에서 Java OpenCV를 사용할 때 프로젝트 라이브러리 참조 오류에 대한 문제
-categories: [eclipse, JAVA, OpenCV]
+categories: devlog
 tags: [eclipse, JAVA, OpenCV, issue]
 img: java.jpg
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "C#에서 C++ 동적 라이브러리 사용법"
+title: "C#에서 C++ 동적 라이브러리 사용"
 date: 2018-04-27 19:30:00 +0000
 description: C#, C++동적라이브러리 마샬링 및 맵핑에 대한 포스팅
-categories: C#
+categories: devlog
 tags: C#
 img: dotnet.jpg
 ---
