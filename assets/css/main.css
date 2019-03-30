@@ -1246,11 +1246,11 @@ footer .copyright {
 }
 
 a.older-posts {
-  float: left;
+  float: right;
 }
 
 a.newer-posts {
-  float: right;
+  float: left;
 }
 
 a.older-posts, a.newer-posts {
