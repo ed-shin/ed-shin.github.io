@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C#에서 Custom Control 만들기 (1)CustomProgressbar"
+title: "C#에서 Custom Control 만들기, CustomProgressbar"
 date: 2018-06-20 19:30:00 +0000
 description: C#으로 Custom Progressbar를 만드는 예제
 categories: devlog

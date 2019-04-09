@@ -2,16 +2,16 @@
   <nav class="pagination" role="pagination">
     <div class="pagination-nav">
       {% if paginator.next_page %}
-        <a class="older-posts" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/">next</a>
+        <a class="older-posts" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/">older</a>
       {% endif %}
 
       <span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span>
 
       {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-          <a class="newer-posts" href="{{ site.baseurl }}/">prev</a>
+          <a class="newer-posts" href="{{ site.baseurl }}/">newer</a>
         {% else %}
-          <a class="newer-posts" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/">prev</a>
+          <a class="newer-posts" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/">newer</a>
         {% endif %}
       {% endif %}
     </div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "블로그의 시작-01, 헤더 추가"
+title: "블로그의 시작, 헤더 추가"
 date: 2018-04-23 13:32:20 +0300
 description: 블로그의 화면이 작은 사이즈인 경우 사이드바 대신 헤더를 사용하도록 변경
 categories: devlog
