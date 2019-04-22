@@ -15,6 +15,7 @@ C# 자체에는 직렬화를 지원해주는 도구인 MemoryStream을 이용하
 C#에는 간단하게 Serialize/Deserialize를 지원해주는 BinaryFormatter라는 클래스가 있다. C#의 강력한 기능인 Reflection을 사용하여 stream 객체를 쉽게 Custom 클래스로 캐스팅이 가능하다. 심지어 object[] 형태의 직렬화/역직렬화 또한 가능하다. 이 기능은 사용 또한 간편해서 아래와 같이 작성하는 것만으로도 손쉽게 직렬화가 가능하다.
 
 > Reference: [MSDN BinaryFormatter Class](https://docs.microsoft.com/ko-kr/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter?view=netframework-4.8)
+
 ```csharp
 FileStream fs = new FileStream("DataFile.dat", FileMode.Create);
 
@@ -38,6 +39,7 @@ finally
 일반적으로 기존의 직렬화/역지렬화는 Custom Class의 map 정보가 필요하다. byte array에 index에 접근하여 역직렬화를 할 수 있도록 말이다. map은 클래스가 많아지거나 복잡해질 수록 노가다가 선행되고 클래스의 구조가 바뀌게 되는 경우 같이 수정되어야하는 번거로움이 있는데 그러한 번거로움을 모두 해결해준다. 이를 가능하게 하는 것은 아래와 같이 BinaryFormatter의 Serialize 함수 내에서 object의 map을 만들어서 내보내기 때문이다.
 
 > Reference: [MSDN BinaryObjectWithMap Class](https://referencesource.microsoft.com/#mscorlib/system/runtime/serialization/formatters/binary/binarycommonclasses.cs,bba9daa226f6a4eb)
+
 ```csharp
 internal sealed class BinaryObjectWithMap : IStreamable
 {
