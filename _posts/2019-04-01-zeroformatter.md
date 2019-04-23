@@ -84,7 +84,7 @@ internal sealed class BinaryObjectWithMap : IStreamable
 
 ZeroFormatter는 git에서 아래와 같이 친절하게 자신의 오픈소스에 대한 성능을 설명해준다.
 
-![ZeroFormatter Performance](/assets/img/post-src/zeroformatter-perform.png)
+![ZeroFormatter-Performance](/assets/img/post-src/zeroformatter-perform.png)
 
 > Deserialize speed is Infinitely fast(but of course, it is unfair, ZeroFormatter's deserialize is delayed when access target field). Serialize speed is fair-comparison. ZeroFormatter is fastest(compare to protobuf-net, 2~3x fast) for sure.
 
