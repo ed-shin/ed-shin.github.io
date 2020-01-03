@@ -144,7 +144,7 @@ kbd,
 samp {
   /* font-family: monospace, monospace; */
   /* 1 */
-  font-size: 1em;
+  font-size: 1.1em;
   /* 2 */
 }
 
@@ -447,7 +447,7 @@ template {
 
 .highlighter-rouge {
   color: #6f605c;
-  font-weight: 400;
+  font-weight: 600;
   border: 1px solid #607D8B;
   -webkit-border-radius: 3px;
           border-radius: 3px;
