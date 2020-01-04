@@ -43,6 +43,8 @@ SQL Injection 취약성 판단 (로그인창, 검색창, get url 파라메터값
 - 기본/확장 프로시저 제거
 - 지속적 취약점 점검, 로깅과 모니터링
 
+> 출처: [https://m.mkexdev.net/427](https://m.mkexdev.net/427)
+
 ---
 
 ### Brute Force 방식
@@ -55,6 +57,8 @@ SQL Injection 취약성 판단 (로그인창, 검색창, get url 파라메터값
 - 로그인 시도 횟수 제한: 계정 잠금, 캡챠
 - 다중 인증
 - 로깅, 모니터링
+
+> 출처: [https://m.mkexdev.net/426?category=694351](https://m.mkexdev.net/426?category=694351)
 
 ---
 
@@ -69,3 +73,5 @@ SQL Injection 취약성 판단 (로그인창, 검색창, get url 파라메터값
 
 - 특정 문자에 대한 필터 또는 인코딩을 하여 스크립트를 동작하지 못 하게 막는 방법
 - 라이브러리 이용 방법: OWASP Antisamy, Naver Lucy XSS Filter, ESAPI 등
+
+> 출처: [https://namu.wiki/w/XSS](https://namu.wiki/w/XSS)
