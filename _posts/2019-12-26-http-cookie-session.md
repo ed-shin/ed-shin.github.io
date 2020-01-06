@@ -4,7 +4,7 @@ title: "Http, Cookie, Session"
 date: 2019-12-26 19:30:00 +0000
 description: Http 그리고 쿠키와 세션이란
 categories: devinfo
-tags: Http, Cookie, Session, Web, Protocol
+tags: Http Cookie Session Web Protocol
 ---
 
 ### HTTP(HyperText Transfer Protocol)란?

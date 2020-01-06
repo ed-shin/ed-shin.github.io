@@ -4,7 +4,7 @@ title: "[Book] Effective Java"
 date: 2018-06-10 18:32:20 +0300
 description: Effective Java 책을 읽고 난 후 몇가지 정리를 해둔다.
 categories: devbook
-tags: [JAVA, study]
+tags: Java Book
 img: java.jpg
 ---
 

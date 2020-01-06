@@ -4,7 +4,7 @@ title: "Object-C에서 C++컴파일, 그리고 Swift bridge"
 date: 2018-05-07 19:30:00 +0000
 description: Object-C에서 C++을 같이 컴파일하고, Swift에서 사용할 때 발생했던 문제들을 다룬 포스팅
 categories: devlog
-tags: [iOS, issue]
+tags: iOS Issue
 img: ios.jpg
 ---
 
